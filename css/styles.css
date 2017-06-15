@@ -1,0 +1,539 @@
+
+html, body {
+    font-family: 'montserrat', 'opensans', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+
+p::selection {
+  background: #fee57f; /* WebKit/Blink Browsers */
+}
+
+
+
+p::-moz-selection {
+  background: #fee57f; /* Gecko Browsers */
+}
+
+
+div.container {
+    max-width: 940px !important;
+}
+
+@media(max-width: 768px) {
+   div.container {
+    max-width: 568px;
+} 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'montserrat';
+    font-weight: 300;
+}
+
+li, p {
+    font-weight: 300;
+} 
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* begin navbar and header styling*/
+
+header {
+    /* Background pattern from Subtle Patterns */
+    background-image: url(../img/img-bg.jpg);
+    background-size: cover;  
+}
+
+.header {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
+    border-color: transparent;
+    margin-bottom: -15px;
+    padding: 15px;
+}
+
+.navbar-nav li {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar-nav li a {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000 !important;
+}
+
+.navbar-nav li a:before {
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.navbar-nav li a:hover:before {
+    visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-nav li a:focus {
+} 
+
+.navbar-nav li a:active {
+} 
+
+.banner {
+    text-align: center;
+    position: relative;
+    top: 20vh;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    font-weight: 500 !important;
+    color: #000;
+}
+
+.banner p {
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: none;
+}
+
+
+.banner a {
+    text-decoration: none;
+}
+
+div.lines hr.line1 {
+    width: 50px;
+    height: 1px;
+    background: #000;
+    border-color: transparent;
+}
+
+div.banner button {
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: block;
+    border-radius: 0px;
+    background: black;
+    border-color: transparent;
+    color: #fff;
+    height: 35px;
+    width: 120px;
+    font-weight: 200;
+}
+
+div.banner button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+a.downarrow-container i {
+    position: relative;
+    top: 20vh;
+    color: #000;
+}
+
+i.fa {
+    color: black;
+    font-size: 1.75em;
+}
+
+/* end navbar and header stling */
+
+
+/*begin about section stylting*/
+
+
+div.img-rounded {
+    width: 230px;
+    height: 230px;
+    background-image: url(../img/emmy.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    div.img-rounded {
+        margin-right: 0px;
+    }
+}
+    
+section.about div.abouttext {
+    text-align: justify;
+    padding-left: 0px;
+}
+
+section.about div.abouttext h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+section.about div.abouttext div.bio {
+    max-width: 85%;
+    position: relative;
+    top: 0;
+    left: 7.5%;
+    padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+    section.about div.abouttext div.bio hr {
+        position: relative;
+        top: 0;
+        left: 45%
+    }
+    section.about div.abouttext div.bio h1 {
+        text-align: center;
+    }
+}
+
+section.about div.abouttext div.bio hr {
+    width: 50px;
+    height: 2px;
+    background: black;
+    border-color: black;
+}
+
+
+section.about div.abouttext button a {
+    text-decoration: none;
+    color: white;
+}
+
+section.about div.abouttext div.skills {
+    margin-top: 25px;
+}
+
+section.about div.skills .techs {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+    padding-left: 0px;
+}
+
+section.about div.skills .techs i {
+    font-size: 3.3rem;
+    text-align: center;
+    color: black;
+}
+
+section.about div.skills .techs a {
+    text-decoration: none;
+}
+
+section.about div.skills .techs button {
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border-radius: 0px;
+    background: #000;
+    border: #000;    
+    color: #fff;
+    height: 65px;
+    width: 75%;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;   
+}
+
+section.about div.skills .techs button:hover {
+    background: black;
+    border-color: black;   
+}
+
+/*end about section styling*/
+
+
+
+
+/*Start portfolio section styling*/
+
+section.portfolio {
+    background-color: #f0f0f0;
+    /* Background pattern from Subtle Patterns */
+    
+}
+
+div.top {
+    text-align: left;
+}
+
+div.top hr {
+    width: 50px;
+    height: 2px;
+    background: black;
+    border-color: black;
+}
+
+div.card {
+/*    box-shadow: 5px 5px 15px #888888;*/
+    height: 300px;
+    max-width: 100%;
+    font-size: 14px;
+    margin-bottom: 25px;
+    background: #fff;
+}
+
+div.card div.cardphoto {
+    height: 300px;
+    max-width: 50%;
+    float: left;
+    background: #fff;
+}
+
+div.card div.cardphoto img {
+    height: 300px;
+    padding: 10px;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+div.card div.cardcontent {
+    height: 300px;
+    max-width: 50%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    div.card div.cardphoto {
+        max-width: 50%;
+    }    
+    div.card div.cardcontent {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 555px) {
+    div.card div.cardphoto {
+        display: none;
+    }
+    div.card div.cardcontent {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    div.card div.cardphoto {
+        display: none;
+    }
+    div.card div.cardcontent {
+        max-width: 100%;
+    }
+}
+
+
+div.card div.cardcontent hr {
+    width: 30px;
+    height: 1px;
+    background: black;
+    border-color: black;
+    
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+div.card div.cardcontent h3 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+div.card div.cardcontent div.tags {
+    margin-bottom: 5px;
+}
+
+div.card div.cardcontent div.tags span {
+    background: #fee57f;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+div.card div.cardcontent div.view {
+    position: absolute;
+    bottom: 15px;
+}
+
+div.card div.cardcontent div.view span a {
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+ul.pager li {
+    color: black;
+}
+
+ul.pager li a {
+    color: black;
+}
+
+/*End portfolio styling*/
+
+
+/*Start contact section styling*/
+
+section.contact {
+    height: 90vh;
+    background-color: #3d3d3d;
+    padding: 20px;
+    max-height: 600px;
+}
+
+@media (max-width: 425px) {
+    section.contact {
+    height: 600px;
+    }
+}
+
+section.contact div.container {
+    max-width: 910px;
+    font-size: 14px;
+}
+
+section.contact div.container h1 {
+    color: #fff;
+}
+
+section.contact div.lines hr.line1 {
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    border-color: #fff;
+}
+
+section.contact div.container ul.social {
+    padding-left: 0px;
+}
+
+section.contact div.container ul.social li {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+section.contact div.container ul.social li i.fa {
+    color: #fff;
+}
+
+section.contact div.container p {
+    color: #fff;
+}
+
+section.contact div.container ul.social li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.contact div.container form {
+    width: 100%;
+    height: 75%;
+    padding: 0px 15px 0px 0px;
+}
+
+section.contact div.container form input {
+    color: #fff;
+    background-color: #3d3d3d;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    overflow: auto;
+    font-size: 16px;
+    padding: 5px;
+}
+
+section.contact div.container form textarea {
+    color: #fff;
+    background-color: #3d3d3d;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    overflow: auto;
+    font-size: 16px;
+    padding: 5px;
+}
+
+section.contact div.container form button {
+    margin-top: 20px;
+    text-transform: uppercase;
+    background: #fff;
+    border-color: transparent;
+    color: #000;
+    height: 35px;
+    width: 120px;
+}
+
+/*End contact section styling*/
+
+/*Footer*/
+footer {
+    height: 10vh;
+    font-size: 14px;
+    position: relative;
+    padding: 30px 0px 20px 0px;
+}
+
+footer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
